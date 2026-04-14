@@ -71,9 +71,8 @@ public class BlogPostService {
                 found = b;
             }
         }
-        blogPostsDB.remove(found);
         if (found == null) throw new NotFoundException(id);
-
+        blogPostsDB.remove(found);
     }
 
 }
