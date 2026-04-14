@@ -25,12 +25,13 @@ public class BlogPost {
     private int tempoDiLettura;
 
     public BlogPost(Categoria categoria, String titolo, String contenuto, int tempoDiLettura) {
+        this.id = UUID.randomUUID();
         this.categoria = categoria;
         this.titolo = titolo;
+        this.coverUrl = "https://picsum.photos/200/300";
         this.contenuto = contenuto;
         this.tempoDiLettura = tempoDiLettura;
-        this.coverUrl = "https://picsum.photos/200/300";
     }
 
-    
+
 }
